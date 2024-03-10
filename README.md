@@ -8,4 +8,7 @@ export interface ISinglyLinkedListNode {
 
 export const reverseSinglyLinkedList: (head: ISinglyLinkedListNode) => 
     ISinglyLinkedListNode | null;
+
+export const getSinglyLinkedListMiddleNode: (head: ISinglyLinkedListNode | null) =>
+    ISinglyLinkedListNode | null;
 ```

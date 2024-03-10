@@ -23,3 +23,16 @@ export const reverseSinglyLinkedList = (head: ISinglyLinkedListNode|null) : ISin
     // Return the new head.
     return prev;
 };
+
+export const getSinglyLinkedListMiddleNode = (head: ISinglyLinkedListNode|null) : ISinglyLinkedListNode|null => {
+
+    let slow: ISinglyLinkedListNode|null = head;
+    let fast: ISinglyLinkedListNode|null = head;
+
+    while(fast?.next) {
+        fast = fast.next.next;
+        slow = slow?.next ?? null;
+    }
+
+    return slow;
+};
