@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index-esm.ts", "../src/core/linked-list.ts"],
+  "sourcesContent": ["export * from './core/linked-list';", "export const aaa = () => {\n\n};"],
+  "mappings": ";;;;;;4ZAAA,IAAAA,EAAA,GAAAC,EAAAD,EAAA,SAAAE,IAAA,eAAAC,EAAAH,GCAO,IAAMI,EAAM,IAAM,CAEzB",
+  "names": ["index_esm_exports", "__export", "aaa", "__toCommonJS", "aaa"]
+}

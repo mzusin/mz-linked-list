@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/core/linked-list.ts"],
+  "sourcesContent": ["export const aaa = () => {\n\n};"],
+  "mappings": ";;;;;;AAAO,IAAMA,EAAM,IAAM,CAEzB",
+  "names": ["aaa"]
+}
