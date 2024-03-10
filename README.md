@@ -1,4 +1,4 @@
-# # mzLinkedList - a collection of TypeScript-based linked list helpers 🚀
+# A collection of TypeScript-based linked list helpers 🚀
 
 ```ts
 export interface ISinglyLinkedListNode {
@@ -6,5 +6,6 @@ export interface ISinglyLinkedListNode {
     next: ISinglyLinkedListNode | null;
 }
 
-export const reverseSinglyLinkedList: (head: ISinglyLinkedListNode) => ISinglyLinkedListNode | null;
+export const reverseSinglyLinkedList: (head: ISinglyLinkedListNode) => 
+    ISinglyLinkedListNode | null;
 ```
