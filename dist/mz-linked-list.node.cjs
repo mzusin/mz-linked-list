@@ -4,5 +4,5 @@ A collection of TypeScript-based linked list helpers.
 https://github.com/mzusin/mz-linked-list
 Copyright (c) 2023-present, Miriam Zusin          
 */
-var e=Object.defineProperty;var x=Object.getOwnPropertyDescriptor;var c=Object.getOwnPropertyNames;var f=Object.prototype.hasOwnProperty;var m=(a,o)=>{for(var t in o)e(a,t,{get:o[t],enumerable:!0})},n=(a,o,t,p)=>{if(o&&typeof o=="object"||typeof o=="function")for(let r of c(o))!f.call(a,r)&&r!==t&&e(a,r,{get:()=>o[r],enumerable:!(p=x(o,r))||p.enumerable});return a};var s=a=>n(e({},"__esModule",{value:!0}),a);var d={};m(d,{aaa:()=>b});module.exports=s(d);var b=()=>{};0&&(module.exports={aaa});
+var d=Object.defineProperty;var o=Object.getOwnPropertyDescriptor;var L=Object.getOwnPropertyNames;var r=Object.prototype.hasOwnProperty;var s=(n,e)=>{for(var i in e)d(n,i,{get:e[i],enumerable:!0})},g=(n,e,i,t)=>{if(e&&typeof e=="object"||typeof e=="function")for(let l of L(e))!r.call(n,l)&&l!==i&&d(n,l,{get:()=>e[l],enumerable:!(t=o(e,l))||t.enumerable});return n};var k=n=>g(d({},"__esModule",{value:!0}),n);var y={};s(y,{reverseSinglyLinkedList:()=>u});module.exports=k(y);var u=n=>{let e=n,i=null;for(;e;){let t=e.next;e.next=i,i=e,e=t}return i};0&&(module.exports={reverseSinglyLinkedList});
 //# sourceMappingURL=mz-linked-list.node.cjs.map

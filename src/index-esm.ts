@@ -1,1 +1,1 @@
-export * from './core/linked-list';
+export * from './core/singly-linked-list';

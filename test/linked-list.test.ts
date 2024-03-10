@@ -1,11 +1,69 @@
-import { aaa } from '../src/core/linked-list';
+import { reverseSinglyLinkedList } from '../src/core/singly-linked-list';
 
-describe('AAA', () => {
+describe('reverseSinglyLinkedList()', () => {
 
-    /*it('calculates mean squared error when actual and predicted values are provided', () => {
-        const actualValues = [1, 2, 3, 4, 5];
-        const predictedValues = [1.5, 2.5, 3.5, 4.5, 5.5];
-        const currentWeight = 1.0;
-        expect(meanSquaredError(currentWeight, actualValues, predictedValues)).toStrictEqual(0.25);
-    });*/
+    it('Reverses an empty singly linked list', () => {
+        expect(reverseSinglyLinkedList(null)).toBe(null);
+    });
+
+    it('1 -> 2', () => {
+
+        const list = {
+            val: 2,
+            next: {
+                val: 1,
+                next: null
+            }
+        };
+
+        const reversedHead = reverseSinglyLinkedList(list);
+
+        expect(reversedHead).toStrictEqual({
+            val: 1,
+            next: {
+                val: 2,
+                next: null
+            }
+        });
+    });
+
+    it('1 -> 2 -> 3 -> 4 -> 5', () => {
+
+        const list = {
+            val: 1,
+            next: {
+                val: 2,
+                next: {
+                    val: 3,
+                    next: {
+                        val: 4,
+                        next: {
+                            val: 5,
+                            next: null,
+                        }
+                    }
+                }
+            }
+        };
+
+        const reversedHead = reverseSinglyLinkedList(list);
+
+        expect(reversedHead).toStrictEqual({
+            val: 5,
+            next: {
+                val: 4,
+                next: {
+                    val: 3,
+                    next: {
+                        val: 2,
+                        next: {
+                            val: 1,
+                            next: null,
+                        }
+                    }
+                }
+            }
+        });
+    });
+
 });

@@ -1,7 +1,7 @@
-import * as linkedList from './core/linked-list';
+import * as singlyLinkedList from './core/singly-linked-list';
 
 const api = {
-    ...linkedList,
+    ...singlyLinkedList,
 };
 
 declare global {
@@ -12,4 +12,4 @@ declare global {
 
 window.mzLinkedList = window.mzLinkedList || api;
 
-export * from './core/linked-list';
+export * from './core/singly-linked-list';
