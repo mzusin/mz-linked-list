@@ -36,3 +36,17 @@ export const getSinglyLinkedListMiddleNode = (head: ISinglyLinkedListNode|null) 
 
     return slow;
 };
+
+export const singlyLinkedListHasCycle = (head: ISinglyLinkedListNode|null) : boolean => {
+
+    let slow: ISinglyLinkedListNode|null = head;
+    let fast: ISinglyLinkedListNode|null = head?.next?.next ?? null;
+
+    while(fast?.next) {
+        if(fast === slow) return true;
+        slow = slow?.next ?? null;
+        fast = fast.next?.next ?? null;
+    }
+
+    return false;
+};

@@ -29,7 +29,8 @@
   },
   "type": "module",
   "keywords": [
-    "ml"
+    "linked-list",
+    "singly-linked-list"
   ],
   "author": "Miriam Zusin <miriam.zusin@gmail.com>",
   "license": "MIT",

@@ -11,4 +11,6 @@ export const reverseSinglyLinkedList: (head: ISinglyLinkedListNode) =>
 
 export const getSinglyLinkedListMiddleNode: (head: ISinglyLinkedListNode | null) =>
     ISinglyLinkedListNode | null;
+
+export const singlyLinkedListHasCycle: (head: ISinglyLinkedListNode | null) => boolean;
 ```
